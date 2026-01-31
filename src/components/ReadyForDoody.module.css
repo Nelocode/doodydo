@@ -1,0 +1,92 @@
+.section {
+    padding: 6rem 0;
+    background: white;
+    text-align: center;
+}
+
+.title {
+    font-size: 3rem;
+    font-weight: 800;
+    color: #1e293b;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+}
+
+.introText {
+    max-width: 800px;
+    margin: 0 auto 3rem;
+    color: #475569;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.truckImageContainer {
+    position: relative;
+    width: 100%;
+    max-width: 900px;
+    height: 500px;
+    /* Adjust based on aspect ratio */
+    margin: 0 auto;
+}
+
+.card {
+    background: white;
+    border: 3px solid #7f1d1d;
+    /* Dark reddish border */
+    border-radius: 1rem;
+    padding: 2rem;
+    max-width: 450px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+}
+
+.ctaTitle {
+    color: #1e293b;
+    font-size: 2rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+    line-height: 1;
+}
+
+.ctaSubtitle {
+    color: #0f172a;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+.inputGroup {
+    display: flex;
+}
+
+.input {
+    flex: 1;
+    padding: 0.75rem;
+    border: 1px solid #cbd5e1;
+    border-radius: 0.5rem 0 0 0.5rem;
+}
+
+.button {
+    background: #0f172a;
+    color: white;
+    font-weight: 800;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0 0.5rem 0.5rem 0;
+    text-transform: uppercase;
+}
+
+@media (max-width: 900px) {
+    .card {
+        position: relative;
+        margin: 0 auto 2rem;
+        right: auto;
+        top: auto;
+    }
+
+    .truckImageContainer {
+        height: 300px;
+    }
+}

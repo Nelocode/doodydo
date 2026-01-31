@@ -1,0 +1,122 @@
+.hero {
+    position: relative;
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    isolation: isolate;
+    /* Create new stacking context */
+    /* Background removed to show image */
+    padding-top: 80px;
+    /* Offset for navbar */
+    overflow: hidden;
+}
+
+.bgImage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    object-fit: cover;
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+    max-width: 600px;
+}
+
+.headline {
+    font-size: 3.5rem;
+    font-weight: 800;
+    color: #0f172a;
+    /* Dark navy like reference */
+    line-height: 1.1;
+    margin-bottom: 1.5rem;
+    text-shadow: 2px 2px 0px rgba(255, 255, 255, 0.5);
+}
+
+.subheadline {
+    font-size: 1.25rem;
+    color: #334155;
+    margin-bottom: 2rem;
+    font-weight: 500;
+}
+
+.ctaContainer {
+    background: white;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    border: 2px solid var(--primary-orange);
+    max-width: 450px;
+}
+
+.formTitle {
+    font-size: 1.5rem;
+    color: var(--primary-orange);
+    /* Changed to verify visibility */
+    font-weight: 800;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+.formSubtitle {
+    text-align: center;
+    color: var(--primary-orange);
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    font-size: 0.9rem;
+}
+
+.inputGroup {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.input {
+    flex: 1;
+    padding: 0.75rem;
+    border: 1px solid #cbd5e1;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+}
+
+.submitBtn {
+    background: #0f172a;
+    color: white;
+    font-weight: 800;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    text-transform: uppercase;
+}
+
+/* Shape divider at bottom */
+.wave {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.wave svg {
+    position: relative;
+    display: block;
+    width: calc(138% + 1.3px);
+    height: 120px;
+}
+
+.wave .shape-fill {
+    fill: #FFFFFF;
+}
+
+@media (max-width: 768px) {
+    .headline {
+        font-size: 2.5rem;
+    }
+}
