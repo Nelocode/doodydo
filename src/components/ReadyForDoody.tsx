@@ -21,13 +21,25 @@ export default function ReadyForDoody() {
                             <input type="text" placeholder="Zip Code" className={styles.input} />
                             <button className={styles.button}>LET'S GO!</button>
                         </div>
+                        <p className={styles.servingText}>Serving North Atlanta</p>
+                        <a href="#" className={styles.appButton}>Software Application</a>
+                    </div>
+
+                    <div className={styles.carLogoOverlay}>
+                        <Image
+                            src="/doodydo_web_logo.png"
+                            alt="DoodyDo Logo"
+                            width={140}
+                            height={80}
+                            style={{ objectFit: 'contain' }}
+                        />
                     </div>
 
                     <Image
-                        src="/branded_truck.png"
-                        alt="DoodyDo Branded Truck"
+                        src="/black_car.png"
+                        alt="DoodyDo Black Car"
                         fill
-                        style={{ objectFit: 'contain' }}
+                        style={{ objectFit: 'contain', priority: 'true' } as any}
                     />
                 </div>
             </div>

@@ -7,7 +7,7 @@ import styles from './Services.module.css';
 const plans = [
     {
         title: "ONE VISIT A WEEK (1X)",
-        price: "$22.99",
+        price: "$25.00",
         details: [
             "Same Weekday Service",
             "Price Good for Up to 4 Dogs",
@@ -16,7 +16,7 @@ const plans = [
     },
     {
         title: "TWO VISITS A WEEK (2X)",
-        price: "$19.99",
+        price: "$22.00",
         details: [
             "Same Weekday Services",
             "Price Good for Up to 4 Dogs",
@@ -25,7 +25,7 @@ const plans = [
     },
     {
         title: "BI-WEEKLY VISITS (2x/MO)",
-        price: "$29.99",
+        price: "$35.00",
         details: [
             "Every Other Week Service",
             "Price Good for Up to 2 Dogs",
@@ -66,9 +66,9 @@ export default function Services() {
                                 ))}
                             </ul>
 
-                            <button className="btn btn-primary" style={{ marginTop: 'auto', width: '100%' }}>
+                            <a href="#" className="btn btn-primary" style={{ marginTop: 'auto', width: '100%', textAlign: 'center' }}>
                                 Get Started
-                            </button>
+                            </a>
                         </motion.div>
                     ))}
                 </div>

@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 import { Truck, Calendar, CheckCircle, CreditCard, Shield } from 'lucide-react';
 import styles from './WhyUs.module.css';
 
@@ -48,12 +49,19 @@ export default function WhyUs() {
                     </div>
 
                     <div className={styles.centerImage}>
-                        {/* Central circular image - Placeholder for dog with goggles */}
-                        <div className={styles.circle}>
-                            <div className={styles.circleText}>
-                                DOODY<br />DO
-                            </div>
-                        </div>
+                        <motion.div
+                            initial={{ opacity: 0, scale: 0.8 }}
+                            whileInView={{ opacity: 1, scale: 1 }}
+                            viewport={{ once: true }}
+                            style={{ position: 'relative', width: '300px', height: '300px' }}
+                        >
+                            <Image
+                                src="/dog_mascot.png"
+                                alt="DoodyDo Dog Mascot"
+                                fill
+                                style={{ objectFit: 'contain' }}
+                            />
+                        </motion.div>
                     </div>
 
                     <div className={styles.column}>

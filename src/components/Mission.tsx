@@ -57,9 +57,9 @@ export default function Mission() {
                         <p>
                             Whether you’ve got one pup or several, we customize service around your needs so your yard stays fresh and usable year-round.
                         </p>
-                        <button className="btn btn-primary">
+                        <a href="#" className="btn btn-primary">
                             Get Started
-                        </button>
+                        </a>
                     </motion.div>
                 </div>
 

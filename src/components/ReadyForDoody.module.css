@@ -26,7 +26,21 @@
     max-width: 900px;
     height: 500px;
     /* Adjust based on aspect ratio */
-    margin: 0 auto;
+    margin: 4rem auto 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carLogoOverlay {
+    position: absolute;
+    width: 140px; /* Tamaño del logo en la puerta */
+    height: auto;
+    z-index: 5;
+    top: 55%; /* Ajustado para estar sobre la puerta */
+    left: 45%; 
+    pointer-events: none; /* Que no interfiera con clics */
+    transform: translate(-50%, -50%);
 }
 
 .card {
@@ -76,6 +90,36 @@
     padding: 0.75rem 1.5rem;
     border-radius: 0 0.5rem 0.5rem 0;
     text-transform: uppercase;
+}
+
+.servingText {
+    color: #475569;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.appButton {
+    display: inline-block;
+    width: 100%;
+    background: #3c8929; /* Brand Green */
+    color: white;
+    font-weight: 800;
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    border: 2px solid transparent;
+}
+
+.appButton:hover {
+    background: white;
+    color: #3c8929;
+    border-color: #3c8929;
 }
 
 @media (max-width: 900px) {
