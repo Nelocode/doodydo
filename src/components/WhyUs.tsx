@@ -2,14 +2,14 @@
 
 import { motion } from 'framer-motion';
 import Image from 'next/image';
-import { Truck, Calendar, CheckCircle, Shield, Award } from 'lucide-react';
+import { Truck, Trash2, Calendar, CheckCircle, Shield, Award } from 'lucide-react';
 import styles from './WhyUs.module.css';
 
 const features = [
     { icon: Calendar, text: "Free Deodorizer Promo" },
     { icon: CheckCircle, text: "Up To 4 Dogs Included" },
     { icon: Shield, text: "Picture of Secured Gate" },
-    { icon: Truck, text: "We Take The Waste With Us" },
+    { icon: Trash2, text: "We Remove and Dispose of All Pet Waste" },
 ];
 
 const rightFeatures = [

@@ -9,128 +9,115 @@
     font-weight: 800;
     color: #1e293b;
     text-transform: uppercase;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
 }
 
 .introText {
-    max-width: 800px;
+    max-width: 700px;
     margin: 0 auto 3rem;
     color: #475569;
-    font-size: 1.1rem;
-    line-height: 1.6;
+    font-size: 1.05rem;
+    line-height: 1.7;
 }
 
-.truckImageContainer {
-    position: relative;
-    width: 100%;
-    max-width: 900px;
-    height: 500px;
-    /* Adjust based on aspect ratio */
-    margin: 4rem auto 0;
+/* Two-column layout: card + bin image */
+.layout {
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    flex-wrap: wrap;
 }
 
-.carLogoOverlay {
-    position: absolute;
-    width: 220px; /* Tamaño del logo en la puerta */
-    height: auto;
-    z-index: 5;
-    top: 55%; /* Ajustado para estar sobre la puerta */
-    left: 45%; 
-    pointer-events: none; /* Que no interfiera con clics */
-    transform: translate(-50%, -50%);
-}
-
+/* CTA Card */
 .card {
     background: white;
     border: 3px solid #7f1d1d;
-    /* Dark reddish border */
     border-radius: 1rem;
     padding: 2rem;
-    max-width: 450px;
-    position: absolute;
-    top: 0;
-    right: 0;
+    width: 100%;
+    max-width: 380px;
     box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
-    z-index: 10;
+    text-align: center;
 }
 
 .ctaTitle {
     color: #1e293b;
-    font-size: 2rem;
+    font-size: 1.75rem;
     font-weight: 800;
     text-transform: uppercase;
     margin-bottom: 0.5rem;
-    line-height: 1;
 }
 
 .ctaSubtitle {
-    color: #0f172a;
-    font-weight: 700;
-    margin-bottom: 1.5rem;
+    color: #64748b;
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin-bottom: 0;
 }
 
-.inputGroup {
-    display: flex;
-}
-
-.input {
-    flex: 1;
-    padding: 0.75rem;
-    border: 1px solid #cbd5e1;
-    border-radius: 0.5rem 0 0 0.5rem;
-}
-
-.button {
-    background: #0f172a;
-    color: white;
-    font-weight: 800;
-    padding: 0.75rem 1.5rem;
-    border-radius: 0 0.5rem 0.5rem 0;
-    text-transform: uppercase;
+.divider {
+    margin: 1.25rem 0;
+    border-top: 1px solid #e2e8f0;
 }
 
 .servingText {
-    color: #475569;
-    font-size: 0.9rem;
-    font-weight: 600;
-    margin-top: 1.5rem;
-    margin-bottom: 1rem;
+    color: #64748b;
+    font-size: 0.85rem;
+    font-weight: 700;
+    margin-bottom: 0.75rem;
     text-transform: uppercase;
     letter-spacing: 0.05em;
 }
 
+/* Buttons */
 .appButton {
-    display: inline-block;
+    display: block;
     width: 100%;
-    background: #3c8929; /* Brand Green */
+    background: #3c8929;
     color: white;
     font-weight: 800;
-    padding: 0.75rem;
+    padding: 0.85rem;
     border-radius: 0.5rem;
     text-transform: uppercase;
     text-decoration: none;
-    transition: all 0.2s ease;
-    border: 2px solid transparent;
+    transition: opacity 0.2s ease;
+    font-size: 1rem;
+    letter-spacing: 0.03em;
+    margin-top: 0.5rem;
 }
 
 .appButton:hover {
-    background: white;
-    color: #3c8929;
-    border-color: #3c8929;
+    opacity: 0.85;
 }
 
-@media (max-width: 900px) {
-    .card {
-        position: relative;
-        margin: 0 auto 2rem;
-        right: auto;
-        top: auto;
+.orangeBtn {
+    background: #d3490c;
+}
+
+/* Bin illustration */
+.binContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+@media (max-width: 768px) {
+    .title {
+        font-size: 2rem;
     }
 
-    .truckImageContainer {
-        height: 300px;
+    .layout {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .binContainer img {
+        max-width: 220px;
+    }
+
+    .card {
+        max-width: 100%;
     }
 }
