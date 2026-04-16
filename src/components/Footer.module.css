@@ -96,3 +96,22 @@
     transform: scale(1.05);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
+
+@media (max-width: 768px) {
+    .ctaTitle {
+        font-size: 1.65rem;
+    }
+
+    .ctaBar {
+        padding: 2rem 1.5rem;
+    }
+
+    .footer {
+        padding: 2.5rem 0 1.5rem;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+}

@@ -116,7 +116,28 @@
 }
 
 @media (max-width: 768px) {
+    .hero {
+        min-height: 100svh;
+        padding-top: 70px;
+        align-items: flex-start;
+        padding-bottom: 2rem;
+    }
+
+    .content {
+        max-width: 100%;
+        padding: 1.5rem 0;
+    }
+
     .headline {
-        font-size: 2.5rem;
+        font-size: 2.2rem;
+    }
+
+    .subheadline {
+        font-size: 1.05rem;
+    }
+
+    .ctaContainer {
+        max-width: 100%;
+        padding: 1.5rem;
     }
 }
