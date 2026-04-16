@@ -55,8 +55,17 @@ export default function Footer() {
                         <div className="column">
                             <h3 className={styles.columnTitle}>Serving North Atlanta</h3>
                             <div className={styles.contactInfo}>
-                                <p>Not sure if you’re in our service area? Reach out, we’d love to help.</p>
-                                {/* <p>📞 (555) 123-4567</p> */}
+                                <p>Not sure if you&apos;re in our service area? Reach out, we&apos;d love to help.</p>
+                                <p>
+                                    <a href="tel:+14047164600" className={styles.contactLink}>
+                                        📞 (404) 716-4600
+                                    </a>
+                                </p>
+                                <p>
+                                    <a href="mailto:info@doodydo.com" className={styles.contactLink}>
+                                        ✉️ info@doodydo.com
+                                    </a>
+                                </p>
                             </div>
                         </div>
 
@@ -65,7 +74,7 @@ export default function Footer() {
                     <div className={styles.copyright}>
                         <p>&copy; {new Date().getFullYear()} doodydo. All rights reserved.</p>
                         <p style={{ marginTop: '0.5rem', fontSize: '0.8rem', opacity: 0.7 }}>
-                            Dog Poop Pickup & Pet Waste Removal in North Atlanta
+                            Dog Poop Pickup &amp; Pet Waste Removal in North Atlanta
                         </p>
                     </div>
                 </div>

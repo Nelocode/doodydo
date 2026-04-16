@@ -55,6 +55,16 @@
     color: #94a3b8;
 }
 
+.contactLink {
+    color: #94a3b8;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.contactLink:hover {
+    color: var(--primary-orange);
+}
+
 .copyright {
     border-top: 1px solid #1e293b;
     padding-top: 2rem;
