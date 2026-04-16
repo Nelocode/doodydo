@@ -32,9 +32,9 @@ export default function Navbar() {
                     <Link href="#services" className={styles.link}>Services</Link>
                     <Link href="#about" className={styles.link}>Why Us</Link>
                     <Link href="#contact" className={styles.link}>Contact</Link>
-                    <Link href="#signup" className="btn btn-primary">
+                    <a href="https://client.sweepandgo.com/login/doodydo-vlnrm" target="_blank" rel="noopener noreferrer" className="btn btn-primary">
                         Sign Up Today
-                    </Link>
+                    </a>
                 </nav>
 
                 <button className={styles.mobileMenuBtn}>

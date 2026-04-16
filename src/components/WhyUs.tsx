@@ -6,7 +6,7 @@ import { Truck, Calendar, CheckCircle, CreditCard, Shield } from 'lucide-react';
 import styles from './WhyUs.module.css';
 
 const features = [
-    { icon: Calendar, text: "First Visit Free" },
+    { icon: Calendar, text: "Free Deodorizer Promo" },
     { icon: CheckCircle, text: "Up To 4 Dogs Included" },
     { icon: Shield, text: "Picture of Secured Gate" },
     { icon: Truck, text: "We Take The Waste With Us" },

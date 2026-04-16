@@ -1,7 +1,6 @@
 "use client";
 
 import Image from 'next/image';
-import { Play } from 'lucide-react';
 import styles from './Mission.module.css';
 import { motion } from 'framer-motion';
 
@@ -20,19 +19,6 @@ export default function Mission() {
                     <span style={{ color: 'var(--primary-orange)' }}>OURSELVES, NOT SO MUCH!</span>
                 </motion.h2>
 
-                <motion.div
-                    className={styles.videoContainer}
-                    initial={{ opacity: 0, scale: 0.95 }}
-                    whileInView={{ opacity: 1, scale: 1 }}
-                    viewport={{ once: true }}
-                >
-                    {/* Generated video thumbnail */}
-                    <Image src="/video_thumbnail.png" alt="Mission Video" fill className={styles.videoThumbnail} />
-                    <div className={styles.playButton}>
-                        <Play fill="white" size={32} />
-                    </div>
-                </motion.div>
-
                 <div className={styles.grid}>
                     <motion.div
                         className={styles.imageShape}
@@ -40,7 +26,7 @@ export default function Mission() {
                         whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ once: true }}
                     >
-                        <Image src="/technician_mission.png" alt="Technician walking away" fill style={{ objectFit: 'cover' }} />
+                        <Image src="/technician_blue_shirt.png" alt="DoodyDo technician in blue shirt" fill style={{ objectFit: 'cover' }} />
                     </motion.div>
 
                     <motion.div
@@ -57,7 +43,7 @@ export default function Mission() {
                         <p>
                             Whether you’ve got one pup or several, we customize service around your needs so your yard stays fresh and usable year-round.
                         </p>
-                        <a href="#" className="btn btn-primary">
+                        <a href="https://client.sweepandgo.com/login/doodydo-vlnrm" target="_blank" rel="noopener noreferrer" className="btn btn-primary">
                             Get Started
                         </a>
                     </motion.div>

@@ -34,7 +34,7 @@
 
 .carLogoOverlay {
     position: absolute;
-    width: 140px; /* Tamaño del logo en la puerta */
+    width: 220px; /* Tamaño del logo en la puerta */
     height: auto;
     z-index: 5;
     top: 55%; /* Ajustado para estar sobre la puerta */

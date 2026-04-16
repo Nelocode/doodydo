@@ -22,15 +22,15 @@ export default function ReadyForDoody() {
                             <button className={styles.button}>LET'S GO!</button>
                         </div>
                         <p className={styles.servingText}>Serving North Atlanta</p>
-                        <a href="#" className={styles.appButton}>Software Application</a>
+                        <a href="https://client.sweepandgo.com/login/doodydo-vlnrm" target="_blank" rel="noopener noreferrer" className={styles.appButton}>Get Started</a>
                     </div>
 
                     <div className={styles.carLogoOverlay}>
                         <Image
                             src="/doodydo_web_logo.png"
                             alt="DoodyDo Logo"
-                            width={140}
-                            height={80}
+                            width={220}
+                            height={120}
                             style={{ objectFit: 'contain' }}
                         />
                     </div>
