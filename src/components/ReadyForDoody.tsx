@@ -27,14 +27,15 @@ export default function ReadyForDoody() {
                         </a>
                     </div>
 
-                    {/* Waste Bin Illustration */}
-                    <div className={styles.binContainer}>
+                    {/* Black Car Illustration */}
+                    <div className={styles.carContainer}>
                         <Image
-                            src="/waste_bin.png"
-                            alt="DoodyDo Professional Waste Disposal"
-                            width={320}
-                            height={380}
-                            style={{ objectFit: 'contain' }}
+                            src="/black_car_cropped.png"
+                            alt="DoodyDo Service Vehicle"
+                            width={520}
+                            height={390}
+                            style={{ objectFit: 'contain', width: '100%', height: 'auto' }}
+                            priority
                         />
                     </div>
                 </div>

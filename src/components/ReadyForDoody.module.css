@@ -20,13 +20,15 @@
     line-height: 1.7;
 }
 
-/* Two-column layout: card + bin image */
+/* Two-column layout: card + car image */
 .layout {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 3rem;
+    gap: 2rem;
     flex-wrap: wrap;
+    max-width: 1100px;
+    margin: 0 auto;
 }
 
 /* CTA Card */
@@ -95,12 +97,31 @@
     background: #d3490c;
 }
 
-/* Bin illustration */
-.binContainer {
+/* Car illustration */
+.carContainer {
+    flex: 1 1 380px;
+    max-width: 520px;
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-shrink: 0;
+}
+
+.carContainer img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+@media (min-width: 1200px) {
+    .carContainer {
+        max-width: 580px;
+    }
+}
+
+@media (max-width: 900px) {
+    .carContainer {
+        max-width: 420px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -113,11 +134,19 @@
         gap: 2rem;
     }
 
-    .binContainer img {
-        max-width: 220px;
+    .carContainer {
+        flex: 1 1 auto;
+        max-width: 340px;
+        width: 100%;
     }
 
     .card {
         max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .carContainer {
+        max-width: 280px;
     }
 }
