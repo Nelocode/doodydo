@@ -2,7 +2,7 @@
 
 import { motion } from 'framer-motion';
 import Image from 'next/image';
-import { Truck, Calendar, CheckCircle, CreditCard, Shield } from 'lucide-react';
+import { Truck, Calendar, CheckCircle, Shield, Award } from 'lucide-react';
 import styles from './WhyUs.module.css';
 
 const features = [
@@ -15,7 +15,7 @@ const features = [
 const rightFeatures = [
     { icon: Shield, text: "Trained & Background Checked" },
     { icon: Calendar, text: "No Contracts" },
-    { icon: CreditCard, text: "No Pre-Payments" },
+    { icon: Award, text: "Doodydo Guarantee" },
     { icon: Truck, text: "Marked Trucks" },
 ];
 

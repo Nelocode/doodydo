@@ -10,7 +10,7 @@
 }
 
 .scrolled {
-    background: rgba(255, 255, 255, 0.9);
+    background: rgba(255, 255, 255, 0.97);
     backdrop-filter: blur(10px);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     padding: 0.75rem 0;
@@ -59,15 +59,73 @@
     background: none;
     border: none;
     cursor: pointer;
+    color: #333;
+    padding: 0.25rem 0.5rem;
+    z-index: 1001;
+}
+
+/* Mobile slide-down menu */
+.mobileMenu {
+    display: none;
+    flex-direction: column;
+    background: white;
+    border-top: 2px solid #f1f5f9;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.35s ease, opacity 0.3s ease;
+    opacity: 0;
+}
+
+.mobileMenuOpen {
+    max-height: 400px;
+    opacity: 1;
+}
+
+.mobileLink {
+    display: block;
+    padding: 1rem 1.5rem;
+    font-weight: 600;
+    color: #333;
+    border-bottom: 1px solid #f1f5f9;
+    text-decoration: none;
+    transition: background 0.2s, color 0.2s;
+}
+
+.mobileLink:hover {
+    background: #fff7f0;
+    color: var(--primary-orange);
+}
+
+.mobileSignUp {
+    display: block;
+    margin: 1rem 1.5rem 1.25rem;
+    padding: 0.85rem;
+    text-align: center;
+    border-radius: 0.5rem;
+    font-weight: 800;
+    font-size: 1rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: var(--primary-orange);
+    color: white;
+    transition: opacity 0.2s;
+}
+
+.mobileSignUp:hover {
+    opacity: 0.88;
 }
 
 @media (max-width: 768px) {
     .navLinks {
         display: none;
-        /* Implement mobile menu later */
     }
 
     .mobileMenuBtn {
         display: block;
+    }
+
+    .mobileMenu {
+        display: flex;
     }
 }

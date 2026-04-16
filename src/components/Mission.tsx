@@ -43,7 +43,7 @@ export default function Mission() {
                         <p>
                             Whether you’ve got one pup or several, we customize service around your needs so your yard stays fresh and usable year-round.
                         </p>
-                        <a href="https://client.sweepandgo.com/login/doodydo-vlnrm" target="_blank" rel="noopener noreferrer" className="btn btn-primary">
+                        <a href="https://client.sweepandgo.com/doodydo-vlnrm/register" target="_blank" rel="noopener noreferrer" className="btn btn-primary">
                             Get Started
                         </a>
                     </motion.div>

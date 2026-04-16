@@ -10,7 +10,7 @@ export default function Footer() {
                 <div className="container">
                     <h2 className={styles.ctaTitle}>READY TO CHECK YARD CLEANUP<br />OFF YOUR TO-DO LIST?</h2>
                     <p style={{ fontSize: '1.2rem', fontWeight: 500 }}>Getting started takes just minutes.</p>
-                    <a href="https://client.sweepandgo.com/login/doodydo-vlnrm" target="_blank" rel="noopener noreferrer" className={styles.ctaButton}>
+                    <a href="https://client.sweepandgo.com/doodydo-vlnrm/register" target="_blank" rel="noopener noreferrer" className={styles.ctaButton}>
                         Schedule Your First Visit
                     </a>
                 </div>

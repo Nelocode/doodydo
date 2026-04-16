@@ -54,14 +54,25 @@ export default function Hero() {
                         transition={{ duration: 0.5, delay: 0.4 }}
                     >
                         <h3 className={styles.formTitle}>SIGN UP TODAY</h3>
-                        <p className={styles.formSubtitle}>ENTER YOUR ZIP TO GET STARTED</p>
+                        <p className={styles.formSubtitle}>SERVING NORTH ATLANTA</p>
 
-                        <form className={styles.inputGroup} onSubmit={(e) => e.preventDefault()}>
-                            <input type="text" placeholder="Zip Code" className={styles.input} />
-                            <button type="submit" className={styles.submitBtn}>
-                                LET'S GO!
-                            </button>
-                        </form>
+                        <a
+                            href="https://client.sweepandgo.com/doodydo-vlnrm/register"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className={styles.submitBtn}
+                            style={{ display: 'block', textAlign: 'center', padding: '0.85rem', borderRadius: '0.5rem', textDecoration: 'none', width: '100%', marginBottom: '0.75rem' }}
+                        >
+                            GET STARTED
+                        </a>
+                        <a
+                            href="https://client.sweepandgo.com/login/doodydo-vlnrm"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            style={{ display: 'block', textAlign: 'center', padding: '0.85rem', borderRadius: '0.5rem', textDecoration: 'none', width: '100%', border: '2px solid #0f172a', color: '#0f172a', fontWeight: 800, fontSize: '0.9rem' }}
+                        >
+                            CLIENT LOG IN
+                        </a>
                     </motion.div>
                 </div>
             </div>

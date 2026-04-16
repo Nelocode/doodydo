@@ -15,14 +15,12 @@ export default function ReadyForDoody() {
                 <div className={styles.truckImageContainer}>
                     {/* CTA Card overlaid on truck image/section in desktop */}
                     <div className={styles.card}>
-                        <h3 className={styles.ctaTitle}>SIGN UP TODAY</h3>
-                        <p className={styles.ctaSubtitle}>ENTER YOUR ZIP TO GET STARTED</p>
-                        <div className={styles.inputGroup}>
-                            <input type="text" placeholder="Zip Code" className={styles.input} />
-                            <button className={styles.button}>LET'S GO!</button>
-                        </div>
-                        <p className={styles.servingText}>Serving North Atlanta</p>
-                        <a href="https://client.sweepandgo.com/login/doodydo-vlnrm" target="_blank" rel="noopener noreferrer" className={styles.appButton}>Get Started</a>
+                        <h3 className={styles.ctaTitle}>CLIENT LOG IN</h3>
+                        <p className={styles.ctaSubtitle}>ACCESS YOUR DOODYDO ACCOUNT</p>
+                        <a href="https://client.sweepandgo.com/login/doodydo-vlnrm" target="_blank" rel="noopener noreferrer" className={styles.appButton} style={{ marginTop: '1rem', display: 'block' }}>Client Log In</a>
+                        <div style={{ margin: '1rem 0', borderTop: '1px solid #e2e8f0' }}></div>
+                        <p className={styles.servingText}>New Customer?</p>
+                        <a href="https://client.sweepandgo.com/doodydo-vlnrm/register" target="_blank" rel="noopener noreferrer" className={styles.appButton} style={{ background: '#d3490c', display: 'block' }}>Get Started</a>
                     </div>
 
                     <div className={styles.carLogoOverlay}>

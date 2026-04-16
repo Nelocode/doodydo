@@ -66,7 +66,7 @@ export default function Services() {
                                 ))}
                             </ul>
 
-                            <a href="https://client.sweepandgo.com/login/doodydo-vlnrm" target="_blank" rel="noopener noreferrer" className="btn btn-primary" style={{ marginTop: 'auto', width: '100%', textAlign: 'center' }}>
+                            <a href="https://client.sweepandgo.com/doodydo-vlnrm/register" target="_blank" rel="noopener noreferrer" className="btn btn-primary" style={{ marginTop: 'auto', width: '100%', textAlign: 'center' }}>
                                 Get Started
                             </a>
                         </motion.div>
