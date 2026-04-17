@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import styles from './Navbar.module.css';
+import TopBanner from './TopBanner';
 
 const CLIENT_LOGIN_URL = "https://client.sweepandgo.com/login/doodydo-vlnrm";
 
@@ -23,6 +24,7 @@ export default function Navbar() {
 
     return (
         <header className={`${styles.header} ${scrolled ? styles.scrolled : ''}`}>
+            <TopBanner />
             <div className={`container ${styles.navContainer}`}>
                 <Link href="/" className={styles.logo}>
                     <Image src="/Logoheader.png" alt="DoodyDo Logo" width={180} height={60} style={{ objectFit: 'contain' }} priority />

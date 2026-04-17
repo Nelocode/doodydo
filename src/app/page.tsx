@@ -1,5 +1,4 @@
 import Navbar from "@/components/Navbar";
-import TopBanner from "@/components/TopBanner";
 import Hero from "@/components/Hero";
 import Services from "@/components/Services";
 import Mission from "@/components/Mission";
@@ -13,7 +12,6 @@ import WaveSeparator from "@/components/WaveSeparator";
 export default function Home() {
   return (
     <main>
-      <TopBanner />
       <Navbar />
       <Hero />
       <div style={{ position: 'relative', marginTop: '-1px' }}>
